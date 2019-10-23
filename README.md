@@ -47,3 +47,12 @@ If you are struggling, use Developer.webex.com Google and your mentors to help.
 If you are still really struggling, message Simon Light, but i will be slow replying.
 
 Good Luck!
+
+
+Put token in access.tkn
+
+install dependecies
+
+Set environment variables
+
+run code
