@@ -1,5 +1,6 @@
 # UTCReading-Takeover
-Used for file storage on UTCR Take over day
+
+Please clone or download this repo to begin.
 
 To start, please make sure you have python3 (important that its 3), git, Flask and the webex teams SDK (links below)
 
