@@ -9,15 +9,6 @@ def bashCommand(command):
     output, error = process.communicate()
     return output
 
-print("CHECKING DEPENDENCIES INSTALLED")
-pip_list = bashCommand("pip list")
-if "Flask" not in pip_list:
-    print("Flask is not installed, please install to continue ")
-    quit()
-if "webexteamssdk" not in pip_list:
-    print("Webex Teams SDK is not installed, please install to continue ")
-    quit()
-print ("Dependencies all installed")
 try:
     f = open('./access.tkn', 'r')
     token = f.read()
