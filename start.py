@@ -24,7 +24,7 @@ print("Navigate to developer.webex.com and create an account/login")
 print("Click your profile in the top right, click 'My Webex Teams Apps' and create a new bot")
 
 while token_empty:
-    token = raw_input("Please enter the ACCESS_TOKEN for your bot: ")
+    token = input("Please enter the ACCESS_TOKEN for your bot: ")
     if token == "":
         print("Please enter a token, cannot leave this blank")
     else:
