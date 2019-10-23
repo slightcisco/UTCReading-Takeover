@@ -1,61 +1,27 @@
 # UTCReading-Takeover
 
-## Installing dependencies
+To start off with, go to developer.webex.com and create an account.
 
-Please clone or download this repo to begin.
+Once there, click documentation, API reference and then messages.
 
-To start, please make sure you have python, Flask and the webex teams SDK (links below)
+Here is a list of all the things you can do with messages (list, create, delete).
 
-https://github.com/CiscoDevNet/webexteamssdk
+Now click List messages.
 
-https://github.com/pallets/flask
+We are now shown a path (/v1/messages) and a method (GET) in the center of the screen, as well as a series of headers and parameters on the right.
 
-## Setting up environment
+One of those Headers is a Bearer token.
 
-Now look in your chats, and you should see a token that is provided. If you have no token then contact someone from Cisco.
+I have posted the Bearer tokens in each of your group chats alread.
 
-Place this token in a new file called access.tkn.
+These correspond with the bots in your chat (that have the same name as your chat).
 
-Make sure there are no spaces or new lines in this file or it wont work
+We can now use a HTTP GET request (in any programming language), passing the headers and parmaters listed on the page to receive a response of messages recieved.
 
-Now we need to set environment variables.
+Along with each of these messages we get back, we also get much more information that is listed at the bottom of the screen.
 
-If you dont know how to do this please use google, it is a fairly simple process.
+We could use this to check if a message has been sent in the last second, as this may be one our bot needs to reply to.
 
-On Linux/OSX you use the export command.
+Use the rest of the documentation from developer.webex.com as well as Google to help create a bot that will help your classroom of the future.
 
-In windows you will need to do this through settings.
-
-Set the following environment variables:
-
- - WEBEX_TEAMS_ACCESS_TOKEN to the token that you had in chat.
- 
- - FLASK_APP to bot_server.py
- 
-That is the environment setup.
-
-## Running the server
-
-To start the server you need to run the command "python -m flask run --host=0.0.0.0"
- 
-You should now be able to talk to your bot by @mentioning it in your team chat.
-
-Your bot is called the same as your team chat, so something like "Group x Team y".
-
-## Next steps
-
-Now have a look at the bot_server.py file and start to play.
-
-Pretty much all of your editing should be in the function replyLogic.
-
-The variables message and room have been passed into this function for you to use, but add more as you see fit.
-
-message is a string that contains the users message, and room is a string that contains the room ID used to respond to.
-
-Try changing the output depending on what the users input is.
-
-If you are struggling, use Developer.webex.com Google and your mentors to help. 
-
-If you are still really struggling, message Simon Light, but i will be slow replying.
-
-Good Luck!
+GOOD LUCK
