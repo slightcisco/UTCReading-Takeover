@@ -29,4 +29,20 @@ One the first time of running the file, you will be prompted for an access token
 
 You should now be able to talk to your bot by @mentioning it in your team chat.
 
-Now have a look att the bot_server.py file and start to play
+Your bot is called the same as your team chat, so something like "Group x Team y".
+
+Now have a look at the bot_server.py file and start to play.
+
+Pretty much all of your editing should be in the function replyLogic.
+
+The variables message and room have been passed into this function for you to use, but add more as you see fit.
+
+message is a string that contains the users message, and room is a string that contains the room ID used to respond to.
+
+Try changing the output depending on what the users input is.
+
+If you are struggling, use Developer.webex.com Google and your mentors to help. 
+
+If you are still really struggling, message Simon Light, but i will be slow replying.
+
+Good Luck!
