@@ -1,36 +1,48 @@
 # UTCReading-Takeover
 
+## Installing dependencies
+
 Please clone or download this repo to begin.
 
-To start, please make sure you have python3 (important that its 3), git, Flask and the webex teams SDK (links below)
+To start, please make sure you have python, Flask and the webex teams SDK (links below)
 
 https://github.com/CiscoDevNet/webexteamssdk
 
 https://github.com/pallets/flask
 
+## Setting up environment
+
 Now look in your chats, and you should see a token that is provided. If you have no token then contact someone from Cisco.
 
-Once this is done, you can simply start by running the start.py file.
+Place this token in a new file called access.tkn.
 
-This file is designed for OSX or Linux, so if this file is crashing please do the following:
+Make sure there are no spaces or new lines in this file or it wont work
 
-Set the following environment variables in python:
+Now we need to set environment variables.
 
- - WEBEX_TEAMS_ACCESS_TOKEN to the token we will cover later
+If you dont know how to do this please use google, it is a fairly simple process.
+
+On Linux/OSX you use the export command.
+
+In windows you will need to do this through settings.
+
+Set the following environment variables:
+
+ - WEBEX_TEAMS_ACCESS_TOKEN to the token that you had in chat.
  
  - FLASK_APP to bot_server.py
  
- - paste your token with no spaces after or new lines after into a file called access.tkn
- 
- - run the command "python -m flask run --host=0.0.0.0"
- 
-The above is the equivilant of running the file.
+That is the environment setup.
 
-One the first time of running the file, you will be prompted for an access token, this can be found in your team chat.
+## Running the server
 
+To start the server you need to run the command "python -m flask run --host=0.0.0.0"
+ 
 You should now be able to talk to your bot by @mentioning it in your team chat.
 
 Your bot is called the same as your team chat, so something like "Group x Team y".
+
+## Next steps
 
 Now have a look at the bot_server.py file and start to play.
 
@@ -47,12 +59,3 @@ If you are struggling, use Developer.webex.com Google and your mentors to help.
 If you are still really struggling, message Simon Light, but i will be slow replying.
 
 Good Luck!
-
-
-Put token in access.tkn
-
-install dependecies
-
-Set environment variables
-
-run code
